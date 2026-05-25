@@ -159,8 +159,6 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    /* 動画非対応ブラウザや省電力モード用のフォールバック背景画像（石垣島オリジナル） */
-    background: url('images/678379756_1978113483078701_2156994088743516557_n.jpg') center/cover no-repeat;
     z-index: 1;
     overflow: hidden;
 }
@@ -168,7 +166,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.85; /* タイトル文字の可読性を確保するためにほんのり透過 */
+    opacity: 1; /* 裏の画像が透けないように不透明（1）に変更 */
 }
 .hero-overlay {
     position: absolute;
