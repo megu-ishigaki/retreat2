@@ -141,6 +141,50 @@ a {
     color: #fff;
     border-color: #fff;
 }
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.btn-text {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: #fff;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+.btn-text:hover {
+    color: var(--primary);
+}
+.header.scrolled .btn-text {
+    color: var(--text-main);
+}
+.header.scrolled .btn-text:hover {
+    color: var(--primary);
+}
+.coming-soon-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 0.08em;
+    box-shadow: 0 8px 20px rgba(194, 157, 91, 0.4);
+    animation: float-badge 3s ease-in-out infinite;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: var(--font-sans);
+}
+@keyframes float-badge {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
 
 /* Hero Section */
 .hero {
@@ -582,6 +626,22 @@ a {
     color: var(--text-light);
     font-weight: normal;
     margin-left: 5px;
+}
+.price-old {
+    font-size: 1.05rem;
+    color: #a0a0a0;
+    text-decoration: line-through;
+    text-align: center;
+    margin-bottom: 4px;
+    font-family: var(--font-sans);
+}
+.price-notice {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-family: var(--font-serif);
 }
 .mt-30 { margin-top: 30px; }
 .note { font-size: 0.85rem; color: #999; margin-top: 20px; }
