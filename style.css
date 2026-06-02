@@ -755,3 +755,44 @@ a {
         font-size: 0.8rem;
     }
 }
+
+/* 追加されたボタンスタイル */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.section-mid-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+        max-width: 320px;
+        margin: 30px auto 0;
+    }
+    .hero-buttons .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+    .section-mid-cta {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+    .section-mid-cta .btn-primary {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+}
