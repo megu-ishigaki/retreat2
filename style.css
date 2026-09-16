@@ -884,3 +884,79 @@ a {
     }
 }
 
+/* Expert line in hero */
+.hero-expert {
+    margin: -25px 0 28px;
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.hero-expert span { font-size: 0.9rem; }
+
+/* Participant testimonials */
+.testimonial-kicker {
+    text-align: center;
+    color: var(--primary-dark);
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+.testimonial-card {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 20px 44px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+}
+.testimonial-item {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(194, 157, 91, 0.2);
+}
+.testimonial-item h3,
+.testimonial-score span,
+.testimonial-message span {
+    color: var(--primary-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.testimonial-item p,
+.testimonial-score p,
+.testimonial-message p {
+    margin-top: 12px;
+    color: var(--text-light);
+    line-height: 2;
+}
+.testimonial-score {
+    margin: 28px 0;
+    padding: 26px 28px;
+    text-align: center;
+    background: var(--bg-light);
+    border-radius: 10px;
+}
+.testimonial-score span { display: block; }
+.testimonial-score strong {
+    display: block;
+    color: var(--primary);
+    font-family: var(--font-sans);
+    font-size: 2.2rem;
+    margin: 5px 0;
+}
+.testimonial-message {
+    margin: 30px 0 20px;
+    padding: 28px;
+    background: linear-gradient(135deg, rgba(194, 157, 91, 0.12), rgba(255, 255, 255, 0.8));
+    border-left: 4px solid var(--primary);
+    border-radius: 0 10px 10px 0;
+}
+@media (max-width: 768px) {
+    .hero-expert { margin: -28px 0 25px; font-size: 0.9rem; }
+    .hero-expert span { font-size: 0.8rem; }
+    .testimonial-card { padding: 12px 22px; }
+    .testimonial-item { padding: 24px 0; }
+    .testimonial-item h3, .testimonial-score span, .testimonial-message span { font-size: 0.92rem; }
+    .testimonial-score { padding: 22px 18px; }
+    .testimonial-message { padding: 22px 18px; }
+}
+
